@@ -131,16 +131,16 @@ function setup() {
 }
 
 // Initialize Color Ranges
-function initializeColorRanges() {
-  const fifth = height / 5;
-  COLOR_RANGES = [
-    { minY: 0, maxY: fifth, baseColor: [230, 200, 255] },
-    { minY: fifth, maxY: fifth * 2, baseColor: [180, 200, 255] },
-    { minY: fifth * 2, maxY: fifth * 3, baseColor: [190, 160, 220] },
-    { minY: fifth * 3, maxY: fifth * 4, baseColor: [0, 120, 200] },
-    { minY: fifth * 4, maxY: height, baseColor: [80, 60, 130] }
-  ];
-}
+// function initializeColorRanges() {
+//   const fifth = height / 5;
+//   COLOR_RANGES = [
+//     { minY: 0, maxY: fifth, baseColor: [230, 200, 255] },
+//     { minY: fifth, maxY: fifth * 2, baseColor: [180, 200, 255] },
+//     { minY: fifth * 2, maxY: fifth * 3, baseColor: [190, 160, 220] },
+//     { minY: fifth * 3, maxY: fifth * 4, baseColor: [0, 120, 200] },
+//     { minY: fifth * 4, maxY: height, baseColor: [80, 60, 130] }
+//   ];
+// }
 
 // Handle Detected Hands
 function gotHands(results) {
@@ -217,12 +217,7 @@ function draw() {
   }
   pop();
 
-  // Display Instructions
-  fill(255);
-  textSize(20);
-  textAlign(CENTER);
-  text('Press R to toggle song playback', width / 2, height - 40);
-  text('Click to toggle oscillators', width / 2, height - 20);
+ 
   
 }
 
