@@ -130,17 +130,17 @@ function setup() {
   initializeColorRanges();
 }
 
-// Initialize Color Ranges
-// function initializeColorRanges() {
-//   const fifth = height / 5;
-//   COLOR_RANGES = [
-//     { minY: 0, maxY: fifth, baseColor: [230, 200, 255] },
-//     { minY: fifth, maxY: fifth * 2, baseColor: [180, 200, 255] },
-//     { minY: fifth * 2, maxY: fifth * 3, baseColor: [190, 160, 220] },
-//     { minY: fifth * 3, maxY: fifth * 4, baseColor: [0, 120, 200] },
-//     { minY: fifth * 4, maxY: height, baseColor: [80, 60, 130] }
-//   ];
-// }
+  // Initialize Color Ranges
+function initializeColorRanges() {
+  const fifth = height / 5;
+  COLOR_RANGES = [
+    { minY: 0, maxY: fifth, baseColor: [230, 200, 255] },
+    { minY: fifth, maxY: fifth * 2, baseColor: [180, 200, 255] },
+    { minY: fifth * 2, maxY: fifth * 3, baseColor: [190, 160, 220] },
+    { minY: fifth * 3, maxY: fifth * 4, baseColor: [0, 120, 200] },
+    { minY: fifth * 4, maxY: height, baseColor: [80, 60, 130] }
+  ];
+}
 
 // Handle Detected Hands
 function gotHands(results) {
