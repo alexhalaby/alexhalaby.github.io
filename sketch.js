@@ -216,6 +216,14 @@ function draw() {
     line(0, i * height / 5, width, i * height / 5);
   }
   pop();
+
+  // Display Instructions
+  fill(255);
+  textSize(20);
+  textAlign(CENTER);
+  text('Press R to toggle song playback', width / 2, height - 40);
+  text('Click to toggle oscillators', width / 2, height - 20);
+  
 }
 
 // Calculate Amplitude Based on Thumb and Index Finger Distance
